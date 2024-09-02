@@ -54,7 +54,7 @@ if (mysqli_num_rows($result) > 0) {
     }
     setcookie("Load", '1', time() + 5000, "/");
 } else {
-    setcookie("Load", '2', time() + 5000, "/");
+    setcookie("Load", '2', time() + 50000, "/");
     die();
 }
 

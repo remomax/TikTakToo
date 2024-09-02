@@ -800,7 +800,7 @@ window.addEventListener('load', function () {
             Game_ID: Game_ID
         };
 
-        // AJAX-Anfrage senden
+
         $.ajax({
             url: 'TikTakToSave.php', // URL zur PHP-Datei
             type: 'POST',

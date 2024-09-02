@@ -30,7 +30,7 @@ $Game_ID = $_POST['Game_ID'] ?? null;
 $sql = "INSERT INTO Games (`Game_ID`, `CurrPlayer`, `col_1_1`, `col_1_2`, `col_1_3`, `col_2_1`, `col_2_2`, `col_2_3`, `col_3_1`, `col_3_2`, `col_3_3`)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-// Bereite das Statement vor
+
 $stmt = $connection->prepare($sql);
 
 if ($stmt === false) {
