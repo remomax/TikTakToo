@@ -41,7 +41,6 @@ if ($stmt === false) {
 // Binde die Parameter
 $stmt->bind_param("sdddddddddd", $Game_ID, $currPlayer, $container11c, $container12c, $container13c, $container21c, $container22c, $container23c, $container31c, $container32c, $container33c);
 
-// Führe die Abfrage aus
 if ($stmt->execute()) {
 
 } else {

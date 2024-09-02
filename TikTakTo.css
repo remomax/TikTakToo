@@ -8,6 +8,16 @@
     text-decoration-skip: spaces;
     text-decoration-skip-ink: spaces;
 }
+.rainbow-text span2 {
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+    text-decoration-skip: spaces;
+    text-decoration-skip-ink: spaces;
+}
 
 .animate {
     animation: colorChange 5s linear infinite;
