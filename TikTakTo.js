@@ -578,7 +578,7 @@ window.addEventListener('load', function () {
         if (container11c === 1) {
             if (container12c === 1) {
                 if (container13c === 1) {
-                    //alert('Red Won!');
+                    
                     hideall();
                     redwin.style.display = 'block';
 
@@ -586,7 +586,7 @@ window.addEventListener('load', function () {
             }
             if (container21c === 1) {
                 if (container31c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -594,7 +594,7 @@ window.addEventListener('load', function () {
             }
             if (container22c === 1) {
                 if (container33c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -604,7 +604,7 @@ window.addEventListener('load', function () {
         if (container12c === 1) {
             if (container22c === 1) {
                 if (container32c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -614,7 +614,7 @@ window.addEventListener('load', function () {
         if (container13c === 1) {
             if (container23c === 1) {
                 if (container33c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -622,7 +622,7 @@ window.addEventListener('load', function () {
             }
             if (container22c === 1) {
                 if (container31c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -632,7 +632,7 @@ window.addEventListener('load', function () {
         if (container11c === 1) {
             if (container12c === 1) {
                 if (container13c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -642,7 +642,7 @@ window.addEventListener('load', function () {
         if (container21c === 1) {
             if (container22c === 1) {
                 if (container23c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -652,7 +652,7 @@ window.addEventListener('load', function () {
         if (container31c === 1) {
             if (container32c === 1) {
                 if (container33c === 1) {
-                    //alert('Red Won!');
+                    
                     redwin.style.display = 'block';
                     hideall();
 
@@ -668,7 +668,7 @@ window.addEventListener('load', function () {
         if (container11c === 2) {
             if (container12c === 2) {
                 if (container13c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -676,7 +676,7 @@ window.addEventListener('load', function () {
             }
             if (container21c === 2) {
                 if (container31c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -684,7 +684,7 @@ window.addEventListener('load', function () {
             }
             if (container22c === 2) {
                 if (container33c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -694,7 +694,7 @@ window.addEventListener('load', function () {
         if (container12c === 2) {
             if (container22c === 2) {
                 if (container32c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -704,7 +704,7 @@ window.addEventListener('load', function () {
         if (container13c === 2) {
             if (container23c === 2) {
                 if (container33c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -712,7 +712,7 @@ window.addEventListener('load', function () {
             }
             if (container22c === 2) {
                 if (container31c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -722,7 +722,7 @@ window.addEventListener('load', function () {
         if (container11c === 2) {
             if (container12c === 2) {
                 if (container13c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -732,7 +732,7 @@ window.addEventListener('load', function () {
         if (container21c === 2) {
             if (container22c === 2) {
                 if (container23c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -742,7 +742,7 @@ window.addEventListener('load', function () {
         if (container31c === 2) {
             if (container32c === 2) {
                 if (container33c === 2) {
-                    //alert('Green Won!');
+                    
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -821,8 +821,7 @@ window.addEventListener('load', function () {
         });
 
 
-        console.log('Game-ID: ')
-        console.log(Game_ID);
+        console.log('Game-ID: ', Game_ID);
         Saved_ID.textContent = String(Game_ID);
         Saved_ID.style.display = 'block';
         Saved.style.display = 'block';
