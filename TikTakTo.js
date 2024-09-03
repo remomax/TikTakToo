@@ -266,6 +266,7 @@ window.addEventListener('load', function () {
     var Submit = document.getElementById('submit');
     var LoadCheck = 2;
     var reload2 = document.getElementById('reload2');
+
     RainBow();
 
 
