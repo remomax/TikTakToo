@@ -13,7 +13,7 @@ class Connection
         $servername = 'localhost:3306'; //IP Address, if localhost do "localhost" or "localhost:3306" or "mysql" (string)
         $username = 'root'; //Username, Default: 'root' (string)
         $password = 'root'; //User Password, Default (string)
-        $dbname = 'Games'; //Database Name (string)
+        $dbname = 'TIkTakTo'; //Database Name (string)
 
         return new mysqli($servername, $username, $password, $dbname);
     }
