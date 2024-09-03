@@ -805,16 +805,6 @@ window.addEventListener('load', function () {
             url: 'TikTakToSave.php', // URL zur PHP-Datei
             type: 'POST',
             data: dataToSend,
-            // success: function (response) {
-            //fetch('TikTakToSave.php')
-            //   .then(response => {console.log(response)})
-            //  .then(data => {
-            ////       const gameId = data.Game_ID;
-            //       Saved_ID.textContent = String(gameId);
-
-            //})
-            // .catch(error => console.error('Fehler:', error));
-            //},
             error: function (xhr, status, error) {
                 console.error('AJAX-Fehler: ' + status + ', ' + error);
             }
