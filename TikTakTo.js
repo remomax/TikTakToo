@@ -893,7 +893,7 @@ window.addEventListener('load', function () {
         return randomString;
     }
 
-    // begin == 1 RED; begin == 2 GREEN
+
 
 
 
