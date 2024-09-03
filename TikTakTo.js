@@ -802,7 +802,7 @@ window.addEventListener('load', function () {
 
 
         $.ajax({
-            url: 'TikTakToSave.php', // URL zur PHP-Datei
+            url: 'TikTakToSave.php',
             type: 'POST',
             data: dataToSend,
             error: function (xhr, status, error) {
