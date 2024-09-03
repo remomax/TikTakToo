@@ -18,3 +18,4 @@ No warranties are given. The license may not give you all of the permissions nec
 All External Used Materials and Credits:
 
 AJAX: Copyright (c) 2013 Forbes Lindesay (https://github.com/ForbesLindesay/ajax)
+jQuery: Copyright (c) OpenJS Foundation and other contributors, https://openjsf.org/ (https://github.com/jquery/jquery/)
