@@ -61,6 +61,19 @@ function LoadGame(){
     var container33c = 0;
     var loadForm = document.getElementById('loadForm');
     loadForm.style.display = 'none';
+    setCookie('Currplayer');
+    setCookie('col_1_1', null);
+    setCookie('col_1_2', null);
+    setCookie('col_1_3', null);
+    setCookie('col_2_1', null);
+    setCookie('col_2_2', null);
+    setCookie('col_2_3', null);
+    setCookie('col_3_1', null);
+    setCookie('col_3_2', null);
+    setCookie('col_3_3', null);
+
+
+
     if (col_1_1 === '1') {
         container11b.style.backgroundColor = 'red';
         container11.style.display = 'none';
@@ -198,7 +211,12 @@ function getCookie(cname) {
     }
     return "";
 }
-
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 window.addEventListener('load', function () {
     var container11 = document.getElementById('1.1');
@@ -266,10 +284,7 @@ window.addEventListener('load', function () {
     var Submit = document.getElementById('submit');
     var LoadCheck = 2;
     var reload2 = document.getElementById('reload2');
-
     RainBow();
-
-
 
 
 
@@ -376,7 +391,6 @@ window.addEventListener('load', function () {
         container.style.display = 'block';
         Secret();
     })
-
 
 
 
