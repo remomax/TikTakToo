@@ -376,7 +376,7 @@ window.addEventListener('load', function () {
         Secret();
     })
 
-// begin == 1 RED; begin == 2 GREEN
+
 
 
     document.getElementById('1.1').addEventListener('click',  function () {
