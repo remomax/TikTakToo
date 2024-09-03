@@ -269,7 +269,7 @@ window.addEventListener('load', function () {
     RainBow();
 
 
-    //container.style.backgroundColor = 'red';
+
 
 
     greentext.style.display = 'none';
