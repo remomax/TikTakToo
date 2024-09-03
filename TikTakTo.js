@@ -59,18 +59,40 @@ function LoadGame(){
     var container33 = document.getElementById('3.3');
     var container33b = document.getElementById('3.3b');
     var container33c = 0;
+    var container = document.getElementById('start');
+    var table = document.getElementById('table');
+    var redtext = document.getElementById('redtext');
+    var redwin = document.getElementById('redwin');
+    var greentext = document.getElementById('greentext');
+    var greenwin = document.getElementById('greenwin');
+    var green = document.getElementById('green');
+    var red = document.getElementById('red');
+    var begintext = document.getElementById('begintext');
+    var nowin = document.getElementById('nowin');
+    var greentogo = document.getElementById('greentogo');
+    var redtogo = document.getElementById('redtogo');
+    var load = document.getElementById('load');
     var loadForm = document.getElementById('loadForm');
+    var Saved = document.getElementById('Saved');
+    var Saved_ID = document.getElementById('Saved_ID');
+    let RainbowStop = 0;
+    const text = "Wer_Beginnt?";
+    var Win = 0;
+    var LoadStart = document.getElementById('LoadStart');
+    var Submit = document.getElementById('submit');
+    var LoadCheck = 2;
+    var reload2 = document.getElementById('reload2');
     loadForm.style.display = 'none';
     setCookie('Currplayer');
-    setCookie('col_1_1', null);
-    setCookie('col_1_2', null);
-    setCookie('col_1_3', null);
-    setCookie('col_2_1', null);
-    setCookie('col_2_2', null);
-    setCookie('col_2_3', null);
-    setCookie('col_3_1', null);
-    setCookie('col_3_2', null);
-    setCookie('col_3_3', null);
+    setCookie('col_1_1');
+    setCookie('col_1_2');
+    setCookie('col_1_3');
+    setCookie('col_2_1');
+    setCookie('col_2_2');
+    setCookie('col_2_3');
+    setCookie('col_3_1');
+    setCookie('col_3_2');
+    setCookie('col_3_3');
 
 
 
@@ -182,6 +204,239 @@ function LoadGame(){
         console.log(332);
     }
 
+    //Check if Red Won
+    if (container11c === 1) {
+        if (container12c === 1) {
+            if (container13c === 1) {
+
+                Win = 1;
+                hideall();
+                redwin.style.display = 'block';
+
+            }
+        }
+        if (container21c === 1) {
+            if (container31c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+        if (container22c === 1) {
+            if (container33c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+    if (container12c === 1) {
+        if (container22c === 1) {
+            if (container32c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+    if (container13c === 1) {
+        if (container23c === 1) {
+            if (container33c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+        if (container22c === 1) {
+            if (container31c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+    if (container11c === 1) {
+        if (container12c === 1) {
+            if (container13c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+    if (container21c === 1) {
+        if (container22c === 1) {
+            if (container23c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+    if (container31c === 1) {
+        if (container32c === 1) {
+            if (container33c === 1) {
+
+                redwin.style.display = 'block';
+                Win = 1;
+                hideall();
+
+            }
+        }
+    }
+
+
+    //Check if Green Won
+
+
+
+    if (container11c === 2) {
+        if (container12c === 2) {
+            if (container13c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+        if (container21c === 2) {
+            if (container31c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+        if (container22c === 2) {
+            if (container33c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+    if (container12c === 2) {
+        if (container22c === 2) {
+            if (container32c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+    if (container13c === 2) {
+        if (container23c === 2) {
+            if (container33c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+        if (container22c === 2) {
+            if (container31c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+    if (container11c === 2) {
+        if (container12c === 2) {
+            if (container13c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+    if (container21c === 2) {
+        if (container22c === 2) {
+            if (container23c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+    if (container31c === 2) {
+        if (container32c === 2) {
+            if (container33c === 2) {
+
+                Win = 1;
+                hideall();
+                greenwin.style.display = 'block';
+
+            }
+        }
+    }
+
+    if (container11c > 0) {
+        if (container12c > 0) {
+            if (container13c > 0) {
+                if (container21c > 0) {
+                    if (container22c > 0) {
+                        if (container23c > 0) {
+                            if (container31c > 0) {
+                                if (container32c > 0) {
+                                    if (container33c > 0) {
+                                        if (Win === 0) {
+                                            hideall();
+                                            nowin.style.display = 'block';
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    function hideall() {
+        container11.style.display = "none";
+        container12.style.display = "none";
+        container13.style.display = "none";
+        container21.style.display = "none";
+        container22.style.display = "none";
+        container23.style.display = "none";
+        container31.style.display = "none";
+        container32.style.display = "none";
+        container33.style.display = "none";
+        greentogo.style.display = 'none';
+        redtogo.style.display = 'none';
+        Win = 1;
+    }
 
 
 }
@@ -285,7 +540,6 @@ window.addEventListener('load', function () {
     var LoadCheck = 2;
     var reload2 = document.getElementById('reload2');
     RainBow();
-
 
 
     greentext.style.display = 'none';
