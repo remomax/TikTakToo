@@ -749,7 +749,7 @@ window.addEventListener('load', function () {
                 }
             }
         }
-//Checken für unentschieden
+
         if (container11c > 0) {
             if (container12c > 0) {
                 if (container13c > 0) {
