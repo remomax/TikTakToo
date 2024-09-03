@@ -579,7 +579,8 @@ window.addEventListener('load', function () {
         if (container11c === 1) {
             if (container12c === 1) {
                 if (container13c === 1) {
-                    
+
+                    Win = 1;
                     hideall();
                     redwin.style.display = 'block';
 
@@ -587,16 +588,18 @@ window.addEventListener('load', function () {
             }
             if (container21c === 1) {
                 if (container31c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
             }
             if (container22c === 1) {
                 if (container33c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -605,8 +608,9 @@ window.addEventListener('load', function () {
         if (container12c === 1) {
             if (container22c === 1) {
                 if (container32c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -615,16 +619,18 @@ window.addEventListener('load', function () {
         if (container13c === 1) {
             if (container23c === 1) {
                 if (container33c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
             }
             if (container22c === 1) {
                 if (container31c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -633,8 +639,9 @@ window.addEventListener('load', function () {
         if (container11c === 1) {
             if (container12c === 1) {
                 if (container13c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -643,8 +650,9 @@ window.addEventListener('load', function () {
         if (container21c === 1) {
             if (container22c === 1) {
                 if (container23c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -653,8 +661,9 @@ window.addEventListener('load', function () {
         if (container31c === 1) {
             if (container32c === 1) {
                 if (container33c === 1) {
-                    
+
                     redwin.style.display = 'block';
+                    Win = 1;
                     hideall();
 
                 }
@@ -669,7 +678,8 @@ window.addEventListener('load', function () {
         if (container11c === 2) {
             if (container12c === 2) {
                 if (container13c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -677,7 +687,8 @@ window.addEventListener('load', function () {
             }
             if (container21c === 2) {
                 if (container31c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -685,7 +696,8 @@ window.addEventListener('load', function () {
             }
             if (container22c === 2) {
                 if (container33c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -695,7 +707,8 @@ window.addEventListener('load', function () {
         if (container12c === 2) {
             if (container22c === 2) {
                 if (container32c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -705,7 +718,8 @@ window.addEventListener('load', function () {
         if (container13c === 2) {
             if (container23c === 2) {
                 if (container33c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -713,7 +727,8 @@ window.addEventListener('load', function () {
             }
             if (container22c === 2) {
                 if (container31c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -723,7 +738,8 @@ window.addEventListener('load', function () {
         if (container11c === 2) {
             if (container12c === 2) {
                 if (container13c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -733,7 +749,8 @@ window.addEventListener('load', function () {
         if (container21c === 2) {
             if (container22c === 2) {
                 if (container23c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -743,7 +760,8 @@ window.addEventListener('load', function () {
         if (container31c === 2) {
             if (container32c === 2) {
                 if (container33c === 2) {
-                    
+
+                    Win = 1;
                     hideall();
                     greenwin.style.display = 'block';
 
@@ -761,7 +779,6 @@ window.addEventListener('load', function () {
                                     if (container32c > 0) {
                                         if (container33c > 0) {
                                             if (Win === 0) {
-                                                //alert('No one Won!');
                                                 hideall();
                                                 nowin.style.display = 'block';
                                             }
@@ -820,7 +837,7 @@ window.addEventListener('load', function () {
         redtogo.style.display = 'none';
     }
 
-
+LoadGame();
 
 
 

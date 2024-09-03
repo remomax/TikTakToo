@@ -1,9 +1,13 @@
 <?php
 declare(strict_types=1);
 namespace Praktikant\Praktikum\TikTakTo;
+use mysqli;
+$servername = 'localhost:3306'; //IP Adresse, oder wen localhost einfach 'Mysql' order 'localhost' (string)
+$username = 'root'; //Benutzername für denn zugang Meistens 'root' (string)
+$password = 'root'; //Password des benutzers (string)
+$dbname = 'TikTakTo'; //datenbank name (string)
 
-use TikTakTo\TikTakTo\Connection;
-$connection = (new Connection())->getConnection();
+$connection = new mysqli($servername, $username, $password, $dbname);
 
 
 $CurrPlayer = 0;
