@@ -2,7 +2,8 @@
 declare(strict_types=1);
 namespace Praktikant\Praktikum\TikTakTo;
 
-use mysqli;
+use TikTakTo\TikTakTo\Connection;
+$connection = (new Connection())->getConnection();
 
 
 $CurrPlayer = 0;
@@ -16,14 +17,6 @@ $col_3_1 = 0;
 $col_3_2 = 0;
 $col_3_3 = 0;
 $Game_ID_NotUsed = 0;
-
-$servername = "localhost:3306";
-$username = "root";
-$password = "root";
-$dbname = "TikTakTo";
-
-
-$connection = new mysqli($servername, $username, $password, $dbname);
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
@@ -52,13 +45,13 @@ if (mysqli_num_rows($result) > 0) {
         $col_3_2 = $row["col_3_2"];
         $col_3_3 = $row["col_3_3"];
     }
-    setcookie("Load", '1', time() + 5000, "/");
+    setcookie("Load", '1', time() + 50000, "/");
 } else {
     setcookie("Load", '2', time() + 50000, "/");
     die();
 }
 
-setcookie("Load", '1', time() + 5, "/");
+
 setcookie("Game_ID", $Game_ID_NotUsed, time() + 15, "/");
 setcookie("CurrPlayer", $CurrPlayer, time() + 15, "/");
 setcookie("col_1_1", $col_1_1, time() + 15, "/");

@@ -1,14 +1,11 @@
 <?php
 declare(strict_types=1);
 namespace Praktikant\Praktikum\TikTakTo;
-use mysqli;
+use TikTakTo\TikTakTo\Connection;
+$connection = (new Connection())->getConnection();
 
-// Erstelle Verbindung
-$servername = "localhost:3306"; // Dein Servername (z.B. "localhost" oder "mysql" für Docker)
-$username = "root";        // Dein Datenbank-Benutzername
-$password = "root";        // Dein Datenbank-Passwort
-$dbname = "TikTakTo";      // Dein Datenbankname
-$connection = new mysqli($servername, $username, $password, $dbname);
+
+
 // Prüfe Verbindung
 if ($connection->connect_error) {
     die("Verbindung fehlgeschlagen: " . $connection->connect_error);
