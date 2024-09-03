@@ -9,3 +9,4 @@ Things to do:
 You need to Import the Games.sql in your Database, 
 Then you need to Change the Connection.php for your db login
 
+Also Read the LICENSE.md
